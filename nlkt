@@ -1,0 +1,13 @@
+# Example using the nltk library and the VADER sentiment analysis tool
+import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
+
+# Create a SentimentIntensityAnalyzer object
+sia = SentimentIntensityAnalyzer()
+
+# Analyze the sentiment of a text
+text = "I love this product! It's amazing."
+sentiment = sia.polarity_scores(text)
+
+# Print the sentiment scores
+print("Sentiment scores:", sentiment)
